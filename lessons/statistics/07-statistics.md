@@ -136,7 +136,7 @@ This tells us that the probability that Elvis was an identical twin, knowing tha
 ### Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+Bayesian and Frequentist statsitcs differ in their definitions of probability. A Bayesian would say that probability is related to our own understanding of the certainty or uncertaintanity of events. The Frequentist approach does not allow for this "subjectivity." A Frequentist definition of probability is related to the frequencies of repeated events, and only repeatable randomly occuring events can have a probability assigned to them. A Bayesian would be completely comfortable assigning probabilities to non-repeatable events. For example, as a Bayesian, it is reasonable to think that you could use probability to predict the outcome of a football game. A frequentist may argue that this probability does not make sense because you cannot infinitely repeat and record the outcome of two football teams playing one another.
 
 ---
 
