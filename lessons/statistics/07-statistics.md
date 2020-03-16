@@ -86,7 +86,50 @@ Bayes' Theorem is an important tool in understanding what we really know, given 
 
 Elvis Presley had a twin brother who died at birth.  What is the probability that Elvis was an identical twin? Assume we observe the following probabilities in the population: fraternal twin is 1/125 and identical twin is 1/300.  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+There are many approaches to this problem, but I will choose to take more direct approach applying Bayes' Therem:
+
+![P(A|B) = \frac{P(B|A)P(A)}{P(B)}](https://render.githubusercontent.com/render/math?math=P(A%7CB)%20%3D%20%5Cfrac%7BP(B%7CA)P(A)%7D%7BP(B)%7D)
+
+For our purposes, this comes down to finding the following:
+
+![P(Identical Twin|Twin Brother) ](https://render.githubusercontent.com/render/math?math=P(Identical%20Twin%7CTwin%20Brother)%20)
+
+In plain English, we're interested in finding the probability the Elvis was an identical twin, **given that** (or already knowing) that he had a twin brother. I will use the following notation to decribe the relative events in this problem:
+
+- I : being an identical twin
+- F : being a fraternal twin
+- T : having a twin **brother** (this is important!)
+
+Thus, applying Bayes' theorem:
+
+![P(I|T) = \frac{P(T|I)P(I)}{P(T)} ](https://render.githubusercontent.com/render/math?math=P(I%7CT)%20%3D%20%5Cfrac%7BP(T%7CI)P(I)%7D%7BP(T)%7D%20)
+
+The most challenging part of this problem is finding ![P(T)](https://render.githubusercontent.com/render/math?math=P(T)). This is because Elvis could have a twin brother as an identical twin **or** fraternal twin, which means we need to make two separate calculations and add them together:
+
+![P(T) = P(T|I)P(I) + P(T|F)P(F)](https://render.githubusercontent.com/render/math?math=P(T)%20%3D%20P(T%7CI)P(I)%2B%20P(T%7CF)P(F))
+
+
+Calculating the probability that Elvis has a twin brother and is an idential twin is quite easy. ![P(I) = \frac{1}{300}](https://render.githubusercontent.com/render/math?math=P(I)%20%3D%20%5Cfrac%7B1%7D%7B300%7D) as this is given to us. ![P(T|I) = \frac{1}{2}](https://render.githubusercontent.com/render/math?math=P(T%7CI)%20%3D%20%5Cfrac%7B1%7D%7B2%7D) because we can safely assume that half of all identical twins will be a boy-boy pair. Therefore our numerator, and part of our denominator is:
+
+![P(T|I)P(I) = \frac{1}{600}](https://render.githubusercontent.com/render/math?math=P(T%7CI)P(I)%20%3D%20%5Cfrac%7B1%7D%7B600%7D)
+
+Now comes the exciting part, calculating ![P(T|F)P(F)](https://render.githubusercontent.com/render/math?math=P(T%7CF)P(F)), which is the probability that has a twin brother and is a fraternal twin. Even though this is not the question we are trying to answer, we need this information since it is part of our sample space (all events where Elvis has a twin brother). We know ![P(F) = \frac{1}{125}](https://render.githubusercontent.com/render/math?math=P(F)%20%3D%20%5Cfrac%7B1%7D%7B125%7D) because this is given to us in the problem. 
+![P(T|F) = \frac{1}{4}](https://render.githubusercontent.com/render/math?math=P(T%7CF)%20%3D%20%5Cfrac%7B1%7D%7B4%7D) because of all the fraternal twin outcomes(BB, BG, GB, GG) only one of of them satisfies that case we are looking at.
+
+Our making the necessary subsitution, our previous expresion for  ![P(I|T)](https://render.githubusercontent.com/render/math?math=P(I%7CT)) becomes:
+
+![P(I|T) = \frac{\frac{1}{600}}{\frac{1}{600} + \frac{1}{500}}](https://render.githubusercontent.com/render/math?math=P(I%7CT)%20%3D%20%5Cfrac%7B%5Cfrac%7B1%7D%7B600%7D%7D%7B%5Cfrac%7B1%7D%7B600%7D%20%2B%20%5Cfrac%7B1%7D%7B500%7D%7D)
+
+Which when simplified is ![\frac{5}{11}](https://render.githubusercontent.com/render/math?math=%5Cfrac%7B5%7D%7B11%7D)
+
+This tells us that the probability that Elvis was an identical twin, knowing that he had a twin brother, is Which when simplified is ![\frac{5}{11}](https://render.githubusercontent.com/render/math?math=%5Cfrac%7B5%7D%7B11%7D).
+
+
+
+
+
+
+
 
 ---
 
