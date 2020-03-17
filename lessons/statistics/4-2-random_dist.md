@@ -17,7 +17,7 @@ thinkplot.Pmf(random1000_pmf)
 thinkplot.Config(xlabel='Random Outcome', ylabel='Probability')
 ```
 
-[image will go here, need to figure this out]
+![](https://github.com/darienpmt/dsp/blob/master/lessons/statistics/ex_0402_plot_1.png)
 
 That is not very helpful. It's clear that each random variable's correspoding probability is around the same value (about 0.001, which makes sense) but the visual just looks like a blob. This is because there have been so many numbers generated, and they are all so close together, we cannot distinguish between different outcomes. To see what's going on here a bit more clearly, let's conduct the same process as above but for only 10 and 100 randomly generated numbers.
 
@@ -42,7 +42,7 @@ random1000_pmf = thinkstats2.Pmf(rand_1000)
 thinkplot.Pmf(random1000_pmf, linewidth=0.1)
 thinkplot.Config(axis=[0.0, 1.0, 0.0, 0.0011])
 ```
-[image will go here, need to figure this out]
+![](https://github.com/darienpmt/dsp/blob/master/lessons/statistics/ex_0402_plot_2.png)
 
 For the visuals with only 10 and 100 randomly generated numbers respectively, we can more easily see the distinct outcomes, with each of them occuring with the same probability (0.1 and 0.01 respectively). For our 1000 randomly generated numbers, I made the lines on the graph thinner so that we can more easily see distictions. A PMF may not be the best way to visualize this data, but it does confirm that np.random.random is uniform between 0 and 1.
 
@@ -53,6 +53,6 @@ random_cmf = thinkstats2.Cdf(rand_1000)
 thinkplot.Cdf(random_cmf)
 thinkplot.Config(xlabel='Random Outcome', ylabel='Cumulative Prob')
 ```
-[image will go here, need to figure this out]
+![](https://github.com/darienpmt/dsp/blob/master/lessons/statistics/ex_0402_plot_3.png)
 
 The CDF is approximatedly a straight line, which, as stated above, shows that np.random.random generates a uniform distribution of numbers.
