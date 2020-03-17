@@ -45,7 +45,7 @@ thinkplot.Config(xlabel='num_kids', ylabel='probability')
 ```
 This code produces the following figure:
  
-![working on this...](lessons/statistics/ex_0301_plot.png)
+![](https://github.com/darienpmt/dsp/blob/master/lessons/statistics/ex_0301_plot.png)
 
 It's clear from the figure that the biased PMF shows there being more families with a greater number of children than in the actual PMF. This is not a surprising result. We calculate the mean of each PMF to get a concrete comparison of their central tendencies.
 
